@@ -33,8 +33,8 @@ spring:
         version: 0.0.1
     datasource:
         driver-class-name: com.mysql.cj.jdbc.Driver
-        password: Qwerty123@
-        url: jdbc:mysql://13.125.98.52:3306/board
+        password: Qwerty12@
+        url: jdbc:mysql://13.125.254.22:3306/board
         username: board
     devtools:
         livereload:
