@@ -181,7 +181,7 @@ document.addEventListener('DOMContentLoaded', function(){
         // 서버 전송
         const response = await fetch('/user/email/auth', {
             method: 'POST',
-            headers: {'Content-Type' : 'application/json'},
+            headers: {'Content-Type': 'application/json'},
             body: JSON.stringify(jsonData)
         });
 
@@ -231,6 +231,7 @@ document.addEventListener('DOMContentLoaded', function(){
 
     // 최종 폼 전송 이벤트
     formRegister.onsubmit = function(e){
+        console.log("form submit!!!")
 
         // 1) 아이디 유효성 검사 결과
         if(!isUidOk){

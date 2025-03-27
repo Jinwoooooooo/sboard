@@ -10,8 +10,9 @@ public class IndexController {
     @GetMapping(value = {"/", "/index"})
     public String index(Authentication auth) {
 
-        if (auth != null && auth.isAuthenticated()) {
-            // 로그인 성공 했을 경우
+
+        if(auth != null && auth.isAuthenticated()){
+            // 로그인을 성공 했을 때
             return "forward:/article/list";
         }
 
